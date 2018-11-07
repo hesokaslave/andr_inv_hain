@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">I.G Stock</string>
+    <string name="tab_text_1">Manuel</string>
+    <string name="tab_text_2">Code à barres</string>
+    <string name="tab_text_3">RFID</string>
+    <string name="action_settings">Paramètres</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+</resources>

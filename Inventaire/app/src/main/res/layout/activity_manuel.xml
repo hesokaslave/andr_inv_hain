@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+
+<TextView
+    android:id="@+id/textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="63dp"
+    android:text="Gestion Manuelle du Stock"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:textSize="24sp" />
+
+<Spinner
+    android:id="@+id/spinner2"
+    android:layout_width="147dp"
+    android:layout_height="wrap_content"
+    android:layout_alignStart="@+id/spinner3"
+    android:layout_alignTop="@+id/textView4"
+    android:layout_marginTop="0dp" />
+
+<Spinner
+    android:id="@+id/spinner3"
+    android:layout_width="148dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="true"
+    android:layout_centerVertical="true"
+    android:layout_marginEnd="57dp" />
+
+    <Button
+    android:id="@+id/button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="117dp"
+    android:shadowColor="@android:color/holo_blue_dark"
+    android:text="Envoyer"
+    android:textColorHighlight="@android:color/holo_blue_bright" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="81dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView4"
+        android:layout_centerVertical="true"
+        android:text="Produit"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="104dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="211dp"
+        android:text="Fournisseur"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+<TextView
+    android:id="@+id/textView6"
+    android:layout_width="88dp"
+    android:layout_height="wrap_content"
+    android:layout_alignEnd="@+id/textView3"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="189dp"
+    android:text="Quantité"
+    android:textColor="@android:color/black"
+    android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/txt_quantity"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView6"
+        android:layout_alignStart="@+id/spinner2"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_reception"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="131dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="Réception" />
+
+    <Button
+        android:id="@+id/btn_livraison"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button"
+        android:layout_alignTop="@+id/btn_reception"
+        android:text="Livraison" />
+
+    <Button
+        android:id="@+id/btn_invent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btn_reception"
+        android:layout_marginEnd="27dp"
+        android:text="Inventaire" />
+</RelativeLayout>
